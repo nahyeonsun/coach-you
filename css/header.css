@@ -1,0 +1,71 @@
+body{
+
+}
+header {  
+  width: 1903px;
+  height: 115px;
+  border-bottom: solid 1px #eee;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+
+header div.wrap {
+  height: 100%;
+  align-items: center;
+}
+header div.wrap h1 {  
+ 
+}
+header div.wrap h1 a {
+  background-image: url(../img/hd_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+  width: 272px;
+  height: 28px;
+  display: block;
+}
+header div.wrap ul.gnb {
+
+}
+header div.wrap ul.gnb li {  
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 30px;
+}
+header div.wrap ul.gnb li a {  
+  line-height: 115px;
+  display: block;
+}
+header div.wrap .sublist{
+  
+}
+header div.wrap a{
+
+}
+header div.wrap a p {
+  background-color: #232529;
+  height: 50px;
+  width: 176px;
+  border-radius: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  padding: 0px 10px 0 22px;
+}
+header div.wrap a p::after{
+  content: "";
+  background-image: url(../img/right.svg);
+  width: 25px;
+  height: 27px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: -9px;
+}
+}
+header div.wrap p:hover{
+  background-color: #e65a31;
+}

@@ -1,0 +1,90 @@
+section#program{
+  background-color: #f5f3ee;
+  padding-top: 140px;
+ }
+section#program .wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  row-gap: 30px;
+ }
+section#program .wrap h2{
+  color: #e65a31;
+  font-weight: bold;
+  font-size: 20px;
+ }
+section#program .wrap h3{
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 1.2;
+ }
+section#program .wrap p{
+  color: #333;
+  font-size: 20px;
+ }
+section#program .wrap p a{  
+  background-color: #232529;
+  height: 69px;
+  width: 270px;
+  border-radius: 50px;
+  line-height: 69px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  display: block;
+ }
+section#program .wrap p a::after{
+  content: "";
+  background-image: url(../img/right2.svg);
+  width: 26px;
+  height: 28px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: -9px;
+}
+section#program .wrap ul{
+
+  gap: 55px;
+}
+section#program .wrap ul li{
+  
+  background-color: white;
+  width: 360px;
+  height: 360px;
+  border-radius: 30px;
+}
+section#program .wrap ul li a{
+  
+}
+section#program .wrap ul li a figure{
+  
+}
+section#program .wrap ul li a figure img{  
+  border-radius: 30px;
+  margin-top: 30px;
+}
+section#program .wrap ul li a figure figcaption{  
+  font-size: 21px;
+  margin-top: 20px;
+}
+section#program .wrap p.h1{
+  font-size: 150px;
+  text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
+  color: #f5f3ee;
+  transform: translateY(82px);
+}
+/* section#program .wrap p.h1::before{
+  content: "COACH YOU";
+  font-size: 150px;
+  text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
+  color: #f5f3ee;
+}
+section#program .wrap p.h1::after{
+  content: "COACH YOU";
+  font-size: 150px;
+  text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
+  color: #f5f3ee;
+}*/

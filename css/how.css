@@ -1,0 +1,46 @@
+section#how{
+
+  position: relative;
+}
+section#how .wrap{
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  position: relative;
+}
+section#how .wrap h2{
+  color: #e65a31;
+  font-weight: bold;
+  font-size: 22px;
+}
+section#how .wrap h3{
+  font-weight: bold;
+}
+section#how .wrap p{
+  font-size: 20px;
+}
+section#how .wrap .scroll{  
+  background-image: url(../img/radio.svg);
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+}
+section#how .wrap .scroll::before{
+  content: "";
+  display: block;
+  border-left: 1px solid #000;
+  width: 38px;
+  position: absolute;
+  bottom: 13px;
+  right: -28px;
+  height: 98px;
+}
+section#how .wrap .scroll::after{
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+}

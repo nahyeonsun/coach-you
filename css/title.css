@@ -1,0 +1,83 @@
+#title {
+  height: 100vh;
+  min-height: 800px;
+  margin: 0 auto;
+  width: 1903px;
+}
+#title .wrap {  
+  height: 100%;
+  gap: 20px;
+  background-image: url(../img/title.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  max-width: 100%;
+}
+#title .wrap  h2 {    
+  font-weight: bold;
+}
+#title .wrap  h3{ 
+  font-size: 20px;
+}
+#title .wrap a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title .wrap  a .program{    
+  background-color: #e65a31;
+  height: 69px;
+  width: 270px;
+  border-radius: 50px;
+  line-height: 69px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+#title .wrap  a .program::after{
+  content: "";
+  background-image: url(../img/right2.svg);
+  width: 26px;
+  height: 28px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: -9px;
+}
+#title .wrap  a .scroll{
+  text-align: center;
+  text-transform: capitalize;
+  color: #444;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: solid 1px #efeceb;
+  line-height: 200px;
+  position: absolute;
+  bottom: 0;
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+#title .wrap  a .scroll::before{
+  content:'';
+}
+@keyframes scroll{
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#title .wrap  a .scroll::after{
+  content: "";
+  display: block;
+  background-image: url(../img/scroll.svg);
+  width: 20px;
+  height: 20px;
+  transform: translate(89px, -75px);
+  vertical-align: -2;
+}

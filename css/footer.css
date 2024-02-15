@@ -1,0 +1,52 @@
+footer {
+  height: 348px;
+  display: flex;
+  align-items: center;
+}
+footer div.flex {
+  flex-wrap: wrap;
+  width: 1200px;
+  padding: 0 calc((100% - 1200px) / 2);
+}
+footer .flex p {
+  display: flex;
+  width: 60%;
+}
+footer .flex ul {
+  width: 40%;
+  justify-content: end;
+}
+footer .flex ul li {
+
+}
+footer .flex ul li a{  
+  color: #555;
+}
+footer .flex ul li:nth-child(2) a{  
+  color: #333;
+}
+footer .flex ul li:not(:first-child)::before{
+  content: "·"
+}
+footer .wrap {
+
+}
+footer .wrap::before{
+  content: "";
+  border-top: solid 1px #ccc;
+  display: block;
+  width: 1200px;
+  margin: 30px 0;
+}
+footer .wrap address.p {
+  
+  margin-right: 35px;
+  color: #999;
+}
+footer .wrap address.p span{ 
+  margin-right: 40px;
+}
+footer .wrap p.p {
+  color: #999;
+  margin-top: 20px;
+}
