@@ -71,7 +71,7 @@ header div.wrap a p::after{
   vertical-align: -9px;
 }
 header div.wrap a p:hover::after{
-  background-image: url(../img/white.svg);  
+  background-image: url(../img/right2.svg);  
 }
 .currentgnb{
   background-color: #e65a31 !important;;

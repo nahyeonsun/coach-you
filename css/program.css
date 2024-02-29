@@ -85,13 +85,17 @@ section#program .wrap p.h1{
   color: #f5f3ee;
   transform: translateY(82px);
   display: flex;
-  overflow: hidden;
   position: relative;
 }
-section#program .wrap p.h1::after{
-  content: "";
+section#program .wrap p.h1::before{
+  content: "COACH YOU";
   font-size: 150px;
   text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
   color: #f5f3ee;
-  transform: translateY(82px);
+}
+section#program .wrap p.h1::after{
+  content: "COACH YOU";
+  font-size: 150px;
+  text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
+  color: #f5f3ee;
 }

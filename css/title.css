@@ -34,6 +34,9 @@
   text-align: center;
   color: white;
 }
+#title .wrap  a .program:hover{ 
+  background-color: #232529;
+}
 #title .wrap  a .program::after{
   content: "";
   background-image: url(../img/right2.svg);
@@ -43,6 +46,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: -9px;
+}
+#title .wrap a .program:hover::after{
+  background-image: url(../img/right.svg); 
 }
 #title .wrap  a .scroll{
   text-align: center;

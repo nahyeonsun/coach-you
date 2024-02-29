@@ -22,11 +22,10 @@ aside ul li.rogo:nth-child(2)::before{
   position: absolute;
   font-size: 14px;
   left: 25px;
-  bottom: 88px;
+  bottom: 94px;
   display: block;
   width: 100px;
   height: 10px;
-  display: none;
   color: #fff;
 }
 aside ul li.rogo:nth-child(3)::before{  
@@ -34,22 +33,20 @@ aside ul li.rogo:nth-child(3)::before{
   position: absolute;
   font-size: 14px;
   left: 25px;
-  bottom: 56px;
+  bottom: 63px;
   display: block;
   width: 110px;
   height: 10px;
-  display: none;
 }
 aside ul li.rogo:nth-child(4)::before{  
   content: "코치유 프로그램";  
   position: absolute;
   font-size: 14px;
   left: 25px;
-  bottom: 24px;
+  bottom: 32px;
   display: block;
   width: 110px;
   height: 10px;
-  display: none;
 }
 aside ul li:not(last-child){
   margin-bottom: 25px;
