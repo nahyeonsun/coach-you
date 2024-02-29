@@ -70,21 +70,28 @@ section#program .wrap ul li a figure figcaption{
   font-size: 21px;
   margin-top: 20px;
 }
-section#program .wrap p.h1{
-  font-size: 150px;
-  text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
-  color: #f5f3ee;
-  transform: translateY(82px);
-}
 /* section#program .wrap p.h1::before{
   content: "COACH YOU";
   font-size: 150px;
   text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
   color: #f5f3ee;
-}
-section#program .wrap p.h1::after{
-  content: "COACH YOU";
+  display: flex;
+  width: 100%;
+  display: block;
+} */
+section#program .wrap p.h1{
   font-size: 150px;
   text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
   color: #f5f3ee;
-}*/
+  transform: translateY(82px);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+section#program .wrap p.h1::after{
+  content: "";
+  font-size: 150px;
+  text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
+  color: #f5f3ee;
+  transform: translateY(82px);
+}

@@ -32,11 +32,13 @@ header div.wrap ul.gnb {
 header div.wrap ul.gnb li {  
   font-size: 18px;
   font-weight: 500;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 header div.wrap ul.gnb li a {  
-  line-height: 115px;
   display: block;
+  line-height: 50px;
+  width: 175px;
+  height: 50px;
 }
 header div.wrap .sublist{
   
@@ -49,11 +51,14 @@ header div.wrap a p {
   height: 50px;
   width: 176px;
   border-radius: 50px;
-  line-height: 50px;
   font-size: 15px;
   text-align: center;
   color: white;
   padding: 0px 10px 0 22px;
+  line-height: 50px;
+}
+header div.wrap p:hover{
+  background-color: #e65a31;
 }
 header div.wrap a p::after{
   content: "";
@@ -65,7 +70,12 @@ header div.wrap a p::after{
   background-repeat: no-repeat;
   vertical-align: -9px;
 }
+header div.wrap a p:hover::after{
+  background-image: url(../img/white.svg);  
 }
-header div.wrap p:hover{
-  background-color: #e65a31;
+.currentgnb{
+  background-color: #e65a31 !important;;
+  text-align: center;
+  border-radius: 50px;
+  color: white;
 }

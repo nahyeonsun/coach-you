@@ -27,6 +27,91 @@
     <link rel="stylesheet" href="css/program.css">
     <link rel="stylesheet" href="css/asid.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <!-- 자바스크립트 -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        // 대메뉴 클릭 시 페이지 스크롤 이동
+            $("header div.wrap ul.gnb li:nth-child(1) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()},800); 
+                return false; 
+            });
+            $("header div.wrap ul.gnb li:nth-child(2) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*2},800); 
+                return false; 
+            });
+            $("header div.wrap ul.gnb li:nth-child(3) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*6},800); 
+                return false; 
+            });
+        // 사이드메뉴 클릭 시 페이지 스크롤 이동
+            $("aside ul li:nth-child(1) a").click(function(){
+                $("html,body").animate({scrollTop:"0px"},800);
+                return false; 
+            });
+            $("aside ul li:nth-child(2) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()},800); 
+                return false; 
+            });
+            $("aside ul li:nth-child(3) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*2},800); 
+                return false; 
+            });
+            $("aside ul li:nth-child(4) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*6},800); 
+                return false; 
+            });
+
+        // 페이지 넘어가면서 대메뉴에 배경색상이 생김
+        // 어사이드 메뉴
+            $(window).scroll(function(){
+            // 홈
+                if($(window).scrollTop()<$("#title").height()){ 
+                // 대메뉴
+                    $("header div.wrap ul.gnb li a").removeClass("currentgnb");
+                // 어사이드 메뉴
+                    $("aside ul li:nth-child(1)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(1)").removeClass("rogo");
+                    $("aside ul li:nth-child(1) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(1) a").removeClass("borderB borderW");
+                }
+            // 고민이 있나요?
+                if($(window).scrollTop()>=$("#title").height()){ 
+                // 대메뉴
+                    $("header div.wrap ul.gnb li:nth-child(1) a").addClass("currentgnb"); 
+                    $("header div.wrap ul.gnb li a").not("header div.wrap ul.gnb li:nth-child(1) a").removeClass("currentgnb");
+                // 어사이드 메뉴
+                    $("aside ul li:nth-child(2)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(2)").removeClass("rogo");
+                    $("aside ul li:nth-child(2) a").addClass("borderW");
+                    $("aside ul li a").not("aside ul li:nth-child(2) a").removeClass("borderB borderW");
+                }
+            // 코치유 진행방식
+                if($(window).scrollTop()>=$("#title").height()+$("#worry").height()){ 
+                // 대메뉴
+                    $("header div.wrap ul.gnb li:nth-child(2) a").addClass("currentgnb"); 
+                    $("header div.wrap ul.gnb li a").not("header div.wrap ul.gnb li:nth-child(2) a").removeClass("currentgnb");
+                // 어사이드 메뉴
+                    $("aside ul li:nth-child(3)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(3)").removeClass("rogo");
+                    $("aside ul li:nth-child(3) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(3) a").removeClass("borderB borderW");
+                }
+            // 코치유 프로그램
+                if($(window).scrollTop()>=$("#title").height()+$("#worry").height()+$("#proceed1").height()+$("#proceed2").height()+$("#proceed3").height()+$("#how").height()){ 
+                // 대메뉴
+                    $("header div.wrap ul.gnb li:nth-child(3) a").addClass("currentgnb"); 
+                    $("header div.wrap ul.gnb li a").not("header div.wrap ul.gnb li:nth-child(3) a").removeClass("currentgnb");
+                // 어사이드 메뉴
+                    $("aside ul li:nth-child(4)").addClass("rogo");
+                    $("aside ul li").not("aside ul li:nth-child(4)").removeClass("rogo");
+                    $("aside ul li:nth-child(4) a").addClass("borderB");
+                    $("aside ul li a").not("aside ul li:nth-child(4) a").removeClass("borderB borderW");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- 상단영역 -->
@@ -202,10 +287,18 @@
     <!-- 우측슬라이드아이콘 -->
     <aside>
         <ul>
-            <li><a class="currentB" href="">홈</a></li>
-            <li><a href="">고민이 있나요? </a></li>
-            <li><a href="">코치유 진행방식</a></li>
-            <li><a href="">코치유 프로그램</a></li>
+            <li class="rogo">
+                <a class="borderB" href="">홈</a>
+            </li>
+            <li>
+                <a href="">고민이 있나요? </a>
+            </li>
+            <li>
+                <a href="">코치유 진행방식</a>
+            </li>
+            <li>
+                <a href="">코치유 프로그램</a>
+            </li>
         </ul>
     </aside>
     <!-- 하단영역 -->

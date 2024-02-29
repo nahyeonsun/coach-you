@@ -9,23 +9,15 @@ aside ul{
 aside ul li{
   
 }
-aside ul li:nth-child(1)::after{  
-  content: "";
-  display: block;
-  border-top: 1px solid #000;
-  width: 38px;
-  position: relative;
-  bottom: 10px;
-  right: 56px;
-}
-aside ul li:nth-child(1)::before{  
+
+aside ul li.rogo:nth-child(1)::before{  
   content: "홈";  
   position: absolute;
   font-size: 14px;
   left: 25px;
   bottom: 122px;
 }
-aside ul li:nth-child(2)::before{  
+aside ul li.rogo:nth-child(2)::before{  
   content: "고민이 있나요?";  
   position: absolute;
   font-size: 14px;
@@ -35,8 +27,9 @@ aside ul li:nth-child(2)::before{
   width: 100px;
   height: 10px;
   display: none;
+  color: #fff;
 }
-aside ul li:nth-child(3)::before{  
+aside ul li.rogo:nth-child(3)::before{  
   content: "코치유 진행방식";  
   position: absolute;
   font-size: 14px;
@@ -47,7 +40,7 @@ aside ul li:nth-child(3)::before{
   height: 10px;
   display: none;
 }
-aside ul li:nth-child(4)::before{  
+aside ul li.rogo:nth-child(4)::before{  
   content: "코치유 프로그램";  
   position: absolute;
   font-size: 14px;
@@ -61,23 +54,43 @@ aside ul li:nth-child(4)::before{
 aside ul li:not(last-child){
   margin-bottom: 25px;
 }
-aside ul li:not(:first-child) a{   
+aside ul li a{   
   font-size: 0;
   width: 6px;
   height: 6px;
   display: block;
-  background-color: #e4e4e4;
-  border-radius: 50%;
+  background-color: #ccc;
+  border-radius: 50%; 
 }
-.currentB{
- background-image: url(../img/nav_logo.png);
- background-size: contain;
- background-repeat: no-repeat;
- width: 15px;
- height: 15px;
- display: block;
- font-size: 0;
+.borderB,.borderW{
+  background-image: url(../img/nav_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  display: block;
+  font-size: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.borderB::before{
+  content: "";
+  display: block;
+  border-top: 1px solid #000;
+  width: 38px;
+  position: relative;
+  top: 4px;
+  right: 56px;
+}
+.borderW::before{
+  content: "";
+  display: block;
+  border-top: 1px solid #fff;
+  width: 38px;
+  position: relative;
+  top: 4px;
+  right: 56px;
 }
 .currentW{
- background-color: white; 
+  background-color: white; 
 }

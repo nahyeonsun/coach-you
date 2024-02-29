@@ -66,7 +66,6 @@ section#proceed1 .wrap article img{
 }
 section#proceed2{
 
-  display: none;
 }
 section#proceed2 .wrap{
 
@@ -132,7 +131,6 @@ section#proceed2 .wrap article img{
   grid-row: 1 / span 5;
 }
 section#proceed3{
-  display: none;
 }
 section#proceed3 .wrap{
 
