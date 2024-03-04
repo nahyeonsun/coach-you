@@ -28,16 +28,16 @@ section#worry .wrap .worry2::after{
   /*! margin-bottom: 30%; */
   background-position-x: 50%;
 }
-section#worry .wrap .worry2 article{
+section#worry .wrap .worry2 figure{
   display: flex;
   margin-bottom: 50px;
   gap: 55px;
   position: relative;
  }
-section#worry .wrap .worry2 article img{
+section#worry .wrap .worry2 figure img{
    
  }
-section#worry .wrap .worry2 article p{  
+section#worry .wrap .worry2 figure figcaption{  
   color: white;
   background-color: #36b189;
   width: 450px;
@@ -47,11 +47,11 @@ section#worry .wrap .worry2 article p{
   text-align: center;
   font-size: 20px;
  }
-section#worry .wrap .worry2 article p.green{
+section#worry .wrap .worry2 figure figcaption.green{
   background-color: #36b189;
   width: 526px;
 }
-section#worry .wrap .worry2 article p.green::before{
+section#worry .wrap .worry2 figure figcaption.green::before{
   content: "";
   border: 18px solid #6205ed;
   display: block;
@@ -66,11 +66,11 @@ section#worry .wrap .worry2 article p.green::before{
   left: 46px;
   transform: rotate(-24deg);
 }
-section#worry .wrap .worry2 article p.puple{
+section#worry .wrap .worry2 figure figcaption.puple{
   background-color: #6205ed;
   width: 497px;
 }
-section#worry .wrap .worry2 article p.puple::before{
+section#worry .wrap .worry2 figure figcaption.puple::before{
   content: "";
   border: 18px solid #6205ed;
   display: block;
@@ -85,11 +85,11 @@ section#worry .wrap .worry2 article p.puple::before{
   right: 190px;
   transform: rotate(15deg);
 }
-section#worry .wrap .worry2 article p.orange{
+section#worry .wrap .worry2 figure figcaption.orange{
  background-color: #e65a31;
  width: 647px;
 }
-section#worry .wrap .worry2 article p.orange::before{
+section#worry .wrap .worry2 figure figcaption.orange::before{
   content: "";
   border: 18px solid #6205ed;
   display: block;

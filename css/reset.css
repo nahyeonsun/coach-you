@@ -2,13 +2,12 @@
 /* CSS Document */
 
 *{
- margin,padding,border,outline,:0;
-   vertical-align:top:
+  padding,border,outline,:0;
+   vertical-align: top;
   }
 html,body{
    height:100%;
 }
-
 hr{
 display:none;
 }   
@@ -50,8 +49,8 @@ i,em,address{
 
  
 *{ 
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   line-height: 1;
 }
 h1{
