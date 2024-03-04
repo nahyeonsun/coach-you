@@ -103,12 +103,3 @@ section#program .wrap p.h1::after{
   color: #f5f3ee;
   padding-left: 150px;
 }
-}
-@keyframes flow {
-  0% {
-      transform: translateX(0, 0);
-  }
-  100% {
-      transform: translateX(-50%, 0);
-  }
-}
