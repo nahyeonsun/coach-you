@@ -70,32 +70,45 @@ section#program .wrap ul li a figure figcaption{
   font-size: 21px;
   margin-top: 20px;
 }
-/* section#program .wrap p.h1::before{
-  content: "COACH YOU";
-  font-size: 150px;
-  text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
-  color: #f5f3ee;
-  display: flex;
-  width: 100%;
-  display: block;
-} */
 section#program .wrap p.h1{
   font-size: 150px;
   text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
   color: #f5f3ee;
   transform: translateY(82px);
-  display: flex;
-  position: relative;
+  white-space: nowrap;
+  animation-name: leftS;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes leftS{
+  0%{
+   transform: translateX(0);
+  }
+  100%{
+   transform: translateX(-50%);
+  }
 }
 section#program .wrap p.h1::before{
   content: "COACH YOU";
   font-size: 150px;
   text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
   color: #f5f3ee;
+  padding-right: 150px;
 }
 section#program .wrap p.h1::after{
   content: "COACH YOU";
   font-size: 150px;
   text-shadow: -1px 0 #c1bfba, 0 1px #c1bfba, 1px 0 #c1bfba, 0 -1px #c1bfba;
   color: #f5f3ee;
+  padding-left: 150px;
+}
+}
+@keyframes flow {
+  0% {
+      transform: translateX(0, 0);
+  }
+  100% {
+      transform: translateX(-50%, 0);
+  }
 }
