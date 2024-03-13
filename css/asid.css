@@ -1,6 +1,6 @@
 aside{
   position: fixed;
-  left: 60px;
+  right: 45px;
   top: calc(50% - 47px);
 }
 aside ul{
@@ -14,14 +14,14 @@ aside ul li.rogo:nth-child(1)::before{
   content: "홈";  
   position: absolute;
   font-size: 14px;
-  left: 25px;
+  right: 22px;
   bottom: 122px;
 }
 aside ul li.rogo:nth-child(2)::before{  
   content: "고민이 있나요?";  
   position: absolute;
   font-size: 14px;
-  left: 25px;
+  right: 12px;
   bottom: 94px;
   display: block;
   width: 100px;
@@ -32,7 +32,7 @@ aside ul li.rogo:nth-child(3)::before{
   content: "코치유 진행방식";  
   position: absolute;
   font-size: 14px;
-  left: 25px;
+  right: 7px;
   bottom: 63px;
   display: block;
   width: 110px;
@@ -42,7 +42,7 @@ aside ul li.rogo:nth-child(4)::before{
   content: "코치유 프로그램";  
   position: absolute;
   font-size: 14px;
-  left: 25px;
+  right: 6px;
   bottom: 32px;
   display: block;
   width: 110px;
@@ -77,7 +77,7 @@ aside ul li a{
   width: 38px;
   position: relative;
   top: 4px;
-  right: 56px;
+  left: 23px;
 }
 .borderW::before{
   content: "";
@@ -86,7 +86,7 @@ aside ul li a{
   width: 38px;
   position: relative;
   top: 4px;
-  right: 56px;
+  left: 33px;
 }
 .currentW{
   background-color: white; 

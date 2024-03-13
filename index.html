@@ -59,10 +59,13 @@
                 return false; 
             });
             $("aside ul li:nth-child(4) a").click(function(){
-                $("html,body").animate({scrollTop:$(window).height()*6},800); 
+                $("html,body").animate({scrollTop:$(window).height()*4},800); 
                 return false; 
             });
-
+            $("aside ul li:nth-child(5) a").click(function(){
+                $("html,body").animate({scrollTop:$(window).height()*8},800); 
+                return false; 
+            });
         // 페이지 넘어가면서 대메뉴에 배경색상이 생김
         // 어사이드 메뉴
             $(window).scroll(function(){
@@ -112,6 +115,9 @@
             });
         });
     </script>
+
+    <!-- 마우스 휠 -->
+
 </head>
 <body>
     <!-- 상단영역 -->
